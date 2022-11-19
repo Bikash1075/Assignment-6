@@ -19,6 +19,15 @@ with open("employee.json","r") as e_read:
     Employee=json.load(e_read)
 print(Employee)
 
+# problem 2
+import json
+state_capital={"Odisha":"Bhubaneswar", "West Bengal":"Kolkata", 
+"Punjab":"Chandigarh", "Bihar":"Patna", 
+"Uttar Pradesh":"Kanpur", "Karnataka":"Bengaluru", "Maharastra":"Mumbai"}
+
+with open("State_Capital.json","w") as S_C:
+    json.dump(state_capital,S_C)
+
 
 
 
