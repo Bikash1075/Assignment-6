@@ -41,8 +41,7 @@ class Employee:
     def read_Emp_data(self):
         with open("employee.json","r") as e_read:
             self.Employee=json.load(e_read)
-        
-            for i, j in self.Employee.items():
+        for i, j in self.Employee.items():
                 print (i,"=",j)    
 e= Employee()
 e.read_Emp_data()
